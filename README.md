@@ -9,6 +9,8 @@ C#에서 Log4net을 간편하게 사용하기 위해 설정해본다.
 - MainWindow.xaml.cs : Logger 테스트
 
 #### csharp-example/csharp-log4net/LoggerConfig.xml
+
+PatternLayout Class, [log4net_Layout_PatternLayout Doc](https://logging.apache.org/log4net/release/sdk/html/T_log4net_Layout_PatternLayout.htm)
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This section contains the log4net configuration settings -->
