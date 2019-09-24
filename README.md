@@ -1,8 +1,14 @@
 # csharp-example
 
-## csharp-log4net
+## 01. csharp-log4net
+C#에서 Log4net을 간편하게 사용하기 위해 설정해본다.
+(예제는 WPF 프로젝트)
 
-csharp-example/csharp-log4net/LoggerConfig.xml
+- LoggerConfig.xml : Log4net 설정파일
+- Logger.cs : Static Logger
+- MainWindow.xaml.cs : Logger 테스트
+
+#### csharp-example/csharp-log4net/LoggerConfig.xml
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
 <!-- This section contains the log4net configuration settings -->
@@ -53,7 +59,7 @@ csharp-example/csharp-log4net/LoggerConfig.xml
 </log4net>
 ```
 
-csharp-example/csharp-log4net/Common/Logger.cs
+#### csharp-example/csharp-log4net/Common/Logger.cs
 ```c#
 public static class Logger
 {
@@ -68,8 +74,12 @@ public static class Logger
 }
 ````
 
-csharp-example/csharp-log4net/MainWindow.xaml.cs
+#### csharp-example/csharp-log4net/MainWindow.xaml.cs
 ```C#
+using csharp_log4net.Common;
+
+,...
+
 public partial class MainWindow : Window
 {
     public MainWindow()
