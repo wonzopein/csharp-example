@@ -5,7 +5,8 @@
   <!-- Logger : Console -->
   <appender name="Console" type="log4net.Appender.ConsoleAppender">
     <layout type="log4net.Layout.PatternLayout">
-      <conversionPattern value="%date %5level %10logger %class{1}:%line - %m%n" />
+      <!--<conversionPattern value="%date %5level %-11logger% %class{1}:%line - %m%n" />-->
+      <conversionPattern value="%date %-5level %-11logger% %15class{1}:%-4line - %m%n" />
     </layout>
   </appender>
 
@@ -17,7 +18,7 @@
     <staticLogFileName value="false"/>
     <rollingStyle value="Date" />
     <layout type="log4net.Layout.PatternLayout">
-      <conversionPattern value="%date %5level %10logger %class{1}:%line - %m%n" />
+      <conversionPattern value="%date %-5level %-11logger% %15class{1}:%-4line - %m%n" />
     </layout>
   </appender>
   
@@ -29,7 +30,19 @@
     <staticLogFileName value="false"/>
     <rollingStyle value="Date" />
     <layout type="log4net.Layout.PatternLayout">
-      <conversionPattern value="%date %5level %10logger %class{1}:%line - %m%n" />
+      <conversionPattern value="%date %-5level %-11logger% %15class{1}:%-4line - %m%n" />
+    </layout>
+  </appender>
+
+  <!-- Logger : Device file -->
+  <appender name="Device" type="log4net.Appender.RollingFileAppender">
+    <file value="Log\" />
+    <appendToFile value="true" />
+    <datePattern value="yyyy-MM-dd-'Device.log'" />
+    <staticLogFileName value="false"/>
+    <rollingStyle value="Date" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date %-5level %-11logger% %15class{1}:%-4line - %m%n" />
     </layout>
   </appender>
 
@@ -41,6 +54,13 @@
     <level value="ALL" />
     <appender-ref ref="All" />
     <appender-ref ref="Application" />
+    <appender-ref ref="Console" />
+  </logger>  
+  
+  <logger name="DEVICE">
+    <level value="ALL" />
+    <appender-ref ref="All" />
+    <appender-ref ref="Device" />
     <appender-ref ref="Console" />
   </logger>
 

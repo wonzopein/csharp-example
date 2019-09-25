@@ -35,6 +35,12 @@ namespace csharp_log4net
             Logger.Application.Warn("Warn.");
             Logger.Application.Error("Error.");
             Logger.Application.Fatal("Fatal.");
+
+            Logger.Device.Info("Info.");
+            Logger.Device.Debug("Debug.");
+            Logger.Device.Warn("Warn.");
+            Logger.Device.Error("Error.");
+            Logger.Device.Fatal("Fatal.");
         }
     }
 }
