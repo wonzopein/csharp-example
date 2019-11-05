@@ -40,7 +40,7 @@
 #### 환경
 - C#
 - WPF
-- Oracle 11g, 12c
+- Oracle 11g, 12c (DLL파일은 github 용량제한으로 제거하고 올림.)
   - oci.dll
   - ociw32.dll
   - Oracle.DataAccess.dll
