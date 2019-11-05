@@ -1,13 +1,18 @@
 # csharp-example
 
 ## 01. csharp-log4net
-C#¿¡¼­ Log4netÀ» °£ÆíÇÏ°Ô »ç¿ëÇÏ±â À§ÇØ ¼³Á¤ÇØº»´Ù.
-(¿¹Á¦´Â WPF ÇÁ·ÎÁ§Æ®)
+C#ì—ì„œ Log4netì„ ê°„í¸í•˜ê²Œ ì‚¬ìš©í•˜ê¸° ìœ„í•´ ì„¤ì •í•´ë³¸ë‹¤.
+(ì˜ˆì œëŠ” WPF í”„ë¡œì íŠ¸)
 
-[ÇÁ·ÎÁ§Æ® ÀÌµ¿](https://github.com/wonzopein/csharp-example/tree/master/csharp-log4net)
+[í”„ë¡œì íŠ¸ ì´ë™](https://github.com/wonzopein/csharp-example/tree/master/csharp-log4net)
 
 ## 02. csharp-net-dapper
 Net.Dapper
 [StackExchage](https://github.com/StackExchange/Dapper)
 
-[ÇÁ·ÎÁ§Æ® ÀÌµ¿](https://github.com/wonzopein/csharp-example/tree/master/csharp-net-dapper)
+[í”„ë¡œì íŠ¸ ì´ë™](https://github.com/wonzopein/csharp-example/tree/master/csharp-net-dapper)
+
+## 03. csharp-oracle-udt
+Oracle User-Defined Types (UDTs) and .NET Custom Types
+
+[í”„ë¡œì íŠ¸ ì´ë™](https://github.com/wonzopein/csharp-example/tree/master/csharp-oracle-udt)
