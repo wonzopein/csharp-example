@@ -259,3 +259,8 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/csharp-oracle-udt/OraOps11w.dll
+/csharp-oracle-udt/oraociei11.dll
+/csharp-oracle-udt/Oracle.DataAccess.dll
+/csharp-oracle-udt/ociw32.dll
+/csharp-oracle-udt/oci.dll
