@@ -236,8 +236,8 @@ CREATE OR REPLACE PACKAGE TEST.PKG_DEV_TEST AS
 
 
 PROCEDURE UDT_TEST(
-    i_bcr_data IN WCS.BCRDATA,
-    io_bcr_data IN OUT WCS.BCRDATA,
+    i_bcr_data IN TEST.BCRDATA,
+    io_bcr_data IN OUT TEST.BCRDATA,
     o_result    OUT  varchar2
 ) IS
     v_txt varchar2(1000);
